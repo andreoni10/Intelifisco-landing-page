@@ -1,0 +1,405 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-28 13:04-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+#: .\intelifisco_landing_page\settings.py:126
+#: .\landing\templates\landing\index.html:64
+msgid "Português"
+msgstr "Portuguese"
+
+#: .\intelifisco_landing_page\settings.py:127
+#: .\landing\templates\landing\index.html:62
+msgid "Inglês"
+msgstr "English"
+
+#: .\landing\forms.py:11
+msgid "Digite seu nome"
+msgstr "Enter your name"
+
+#: .\landing\forms.py:17
+msgid "Digite seu email"
+msgstr "Enter your email"
+
+#: .\landing\forms.py:23
+msgid "Digite seu telefone"
+msgstr "Enter your phone number"
+
+#: .\landing\forms.py:28
+msgid "Digite sua mensagem"
+msgstr "Enter your message"
+
+#: .\landing\templates\landing\index.html:9
+msgid "Intelifisco"
+msgstr "Intelifisco"
+
+#: .\landing\templates\landing\index.html:10
+#: .\landing\templates\landing\index.html:90
+msgid ""
+"A Intelifisco oferece inteligência tributária para simplificar sua vida "
+"financeira. Planejamento, conformidade e economia para o seu bolso."
+msgstr "Intelifisco offers tax intelligence to simplify your financial life. We focus on planning, compliance, and savings for your pocket."
+
+#: .\landing\templates\landing\index.html:52
+msgid "Logo Intelifisco"
+msgstr "Intelifisco logo"
+
+#: .\landing\templates\landing\index.html:56
+#: .\landing\templates\landing\index.html:419
+msgid "Início"
+msgstr "Home"
+
+#: .\landing\templates\landing\index.html:57
+#: .\landing\templates\landing\index.html:104
+#: .\landing\templates\landing\index.html:420
+msgid "Nossos serviços"
+msgstr "Our services"
+
+#: .\landing\templates\landing\index.html:58
+msgid "Sobre nós"
+msgstr "About Us"
+
+#: .\landing\templates\landing\index.html:59
+#: .\landing\templates\landing\index.html:422
+#: .\landing\templates\landing\index.html:426
+msgid "Contato"
+msgstr "Contact"
+
+#: .\landing\templates\landing\index.html:88
+msgid "Impostos? Deixa com a gente."
+msgstr "Taxes? We've got this."
+
+#: .\landing\templates\landing\index.html:93
+msgid "Começar Agora"
+msgstr "Get Started"
+
+#: .\landing\templates\landing\index.html:94
+msgid "Saiba Mais"
+msgstr "Learn more"
+
+#: .\landing\templates\landing\index.html:105
+msgid "A Gestão Tributária do Seu Patrimônio"
+msgstr "Managing Your Wealth's Tax"
+
+#: .\landing\templates\landing\index.html:107
+msgid ""
+"<i>Seu tempo é valioso. Suas finanças são complexas. Nossa inteligência "
+"tributária garante a tranquilidade e a segurança que você precisa.</i>"
+msgstr "<i>Your time is valuable. Your finances are complex. Our tax intelligence ensures the peace of mind and security you need.</i>"
+
+#: .\landing\templates\landing\index.html:111
+msgid ""
+"Você construiu um patrimônio e sabe que a gestão fiscal é uma parte "
+"essencial para protegê-lo e fazê-lo crescer."
+msgstr "You've built your wealth and you know that tax management is an essential part of protecting it and making it grow."
+
+#: .\landing\templates\landing\index.html:115
+msgid ""
+"Não se preocupe mais com a complexidade tributária. Focamos em um "
+"planejamento personalizado, cuidando de suas declarações e buscando a "
+"conformidade total e as melhores oportunidades de economia para o seu caso."
+msgstr "Don't worry anymore about tax complexity. We focus on personalized planning, taking care of your declarations and seeking full compliance and the best saving opportunities for your case."
+
+#: .\landing\templates\landing\index.html:120
+msgid "Serviços"
+msgstr "Services"
+
+#: .\landing\templates\landing\index.html:123
+#: .\landing\templates\landing\index.html:143
+msgid "Compliance Tributário no Brasil"
+msgstr "Tax Compliance in Brazil"
+
+#: .\landing\templates\landing\index.html:127
+#: .\landing\templates\landing\index.html:170
+msgid "Investimentos offshore"
+msgstr "Offshore investments"
+
+#: .\landing\templates\landing\index.html:131
+#: .\landing\templates\landing\index.html:188
+msgid "Contabilidade"
+msgstr "Accounting"
+
+#: .\landing\templates\landing\index.html:135
+#: .\landing\templates\landing\index.html:203
+msgid "Planejamento patrimonial"
+msgstr "Wealth Planning"
+
+#: .\landing\templates\landing\index.html:147
+msgid "Imposto de Renda Pessoa Física"
+msgstr "Individual Income Tax"
+
+#: .\landing\templates\landing\index.html:150
+msgid "Declaração de Capitais Brasileiros no Exterior"
+msgstr "Central Bank Assets Return"
+
+#: .\landing\templates\landing\index.html:153
+msgid "Ganho de Capital e Renda Variável"
+msgstr "Capital Gains and Stock market tax"
+
+#: .\landing\templates\landing\index.html:156
+msgid "Carne-leão"
+msgstr "Carne-leão (Tax on Foreign or Non-Pre-Taxed Income)"
+
+#: .\landing\templates\landing\index.html:159
+msgid "ITR"
+msgstr "Rural Territorial Tax (ITR)"
+
+#: .\landing\templates\landing\index.html:162
+msgid "ITCMD e ITBI"
+msgstr "Inheritance Tax (ITCMD)"
+
+#: .\landing\templates\landing\index.html:174
+msgid "Contabilidade de empresas offshore"
+msgstr "Offshore Company Accounting"
+
+#: .\landing\templates\landing\index.html:177
+msgid "Apuração de imposto sobre investimentos no exterior"
+msgstr "Tax Calculation on Foreign Investments"
+
+#: .\landing\templates\landing\index.html:180
+msgid "Controle de movimentação em investimentos no exterior"
+msgstr "Offshore Investment Portfolio Tracking and Reporting"
+
+#: .\landing\templates\landing\index.html:192
+msgid "Contabilidade fiscal e societária"
+msgstr "Tax and Corporate Accounting"
+
+#: .\landing\templates\landing\index.html:195
+msgid "Departamento pessoal"
+msgstr "Payroll and HR Services"
+
+#: .\landing\templates\landing\index.html:207
+msgid "Análise de impacto tributário em operações"
+msgstr "Tax impact analysis"
+
+#: .\landing\templates\landing\index.html:210
+msgid "Planejamento sucessório"
+msgstr "Estate Planning"
+
+#: .\landing\templates\landing\index.html:215
+msgid "Análise de estruturas fiscais"
+msgstr ""
+
+#: .\landing\templates\landing\index.html:230
+#: .\landing\templates\landing\index.html:421
+msgid "Sobre a Intelifisco"
+msgstr "About Intelifisco"
+
+#: .\landing\templates\landing\index.html:232
+msgid ""
+"Na Intelifisco, nos dedicados a simplificar a complexidade do cenário fiscal "
+"brasileiro para indivíduos e famílias. Acreditamos que um serviço de alto "
+"nível só pode existir com a união de três pilares: <strong>experiência "
+"personalizada, rigor técnico e tecnologia.</strong>"
+msgstr "At Intelifisco, we are dedicated to simplifying the complexity of the Brazilian tax landscape for individuals and families. We believe that a high-level service can only exist through the union of three pillars: <strong>personalized experience, technical rigor, and technology.</strong>"
+
+#: .\landing\templates\landing\index.html:235
+msgid ""
+"Nossa jornada começou com a visão de um profissional com mais de <strong>12 "
+"anos</strong> de experiência em consultoria <strong>Big 4</strong>. Com "
+"profundo conhecimento em <strong>tributação de pessoas físicas</strong>, "
+"identificamos uma lacuna: a necessidade de um parceiro que combinasse a "
+"profundidade técnica das grandes consultorias com a eficiência e a "
+"acessibilidade da inovação."
+msgstr "Our journey began with the vision of a professional with over <strong>12 years</strong> of experience in a <strong>Big 4</strong> consultancy. With deep knowledge of <strong>individual taxation</strong>, he identified a gap: the need for a partner who could combine the technical depth of large consultancies with the efficiency and accessibility of innovation"
+
+#: .\landing\templates\landing\index.html:238
+msgid ""
+"É por isso que, na Intelifisco, <strong>qualidade</strong> é inegociável. "
+"Nossos esforços são dedicados para que você receba orientações precisas e "
+"que suas obrigações sejam cumpridas com total <strong>segurança e "
+"conformidade</strong>.<br />"
+msgstr "That is why, at Intelifisco, <strong>quality is non-negotiable</strong>. Our efforts are dedicated to ensuring you receive precise guidance and that your obligations are met with total <strong>security and compliance</strong>.<br />"
+
+#: .\landing\templates\landing\index.html:243
+msgid "Imagem sobre a Intelifisco"
+msgstr "Image about Intelifisco"
+
+#: .\landing\templates\landing\index.html:251
+msgid "Nossa"
+msgstr "Our"
+
+#: .\landing\templates\landing\index.html:251
+msgid "Filosofia"
+msgstr "Philosophy"
+
+#: .\landing\templates\landing\index.html:258
+msgid "Competência e Rigor"
+msgstr "Competence and Rigor"
+
+#: .\landing\templates\landing\index.html:260
+msgid ""
+"Oferecemos o mais alto nível de <strong>expertise fiscal</strong>, "
+"fundamental para a gestão de patrimônios complexos."
+msgstr "We offer the highest level of <strong>fiscal expertise</strong>, which is fundamental for managing complex wealth."
+
+#: .\landing\templates\landing\index.html:268
+msgid "Transparência e Confidencialidade"
+msgstr "Transparency and Confidentiality"
+
+#: .\landing\templates\landing\index.html:270
+msgid ""
+"Total clareza em nossos processos e o compromisso máximo com a "
+"<strong>confidencialidade</strong> de suas informações."
+msgstr "Total clarity in our processes and the maximum commitment to the <strong>confidentiality</strong> of your information."
+
+#: .\landing\templates\landing\index.html:278
+msgid "Tecnologia a Serviço"
+msgstr "Technology at Your Service"
+
+#: .\landing\templates\landing\index.html:280
+msgid ""
+"Unimos nossa <strong>conexão humana</strong> e personalizada com o poder da "
+"<strong>tecnologia</strong> para otimizar processos complexos."
+msgstr "We unite our human and personalized connection with the power of <strong>technology</strong> to optimize complex processes"
+
+#: .\landing\templates\landing\index.html:285
+msgid ""
+"Com a Intelifisco, você garante que sua gestão fiscal seja uma fonte de "
+"segurança e otimização, não de preocupação."
+msgstr "With Intelifisco, you ensure that your tax management is a source of security and optimization, not of worry."
+
+#: .\landing\templates\landing\index.html:296
+msgid "Nossa liderança"
+msgstr "Our Leadership"
+
+#: .\landing\templates\landing\index.html:302
+msgid "Sócio fundador"
+msgstr "Founding member"
+
+#: .\landing\templates\landing\index.html:305
+msgid ""
+"Diego é advogado e especialista em direito tributário, com mais de 13 anos "
+"de experiência dedicados à tributação de pessos físicas."
+msgstr "Diego is a lawyer and specialist in tax law, with over 13 years of experience dedicated to the taxation of individuals."
+
+#: .\landing\templates\landing\index.html:308
+msgid ""
+"Antes de fundar a Intelifisco, atuou como Gerente Sênior de Consultoria "
+"Tributária em uma auditoria \"Big Four\", onde liderou projetos de alta "
+"complexidade para executivos e grandes patrimônios. Hoje, une esse rigor "
+"técnico à tecnologia para oferecer uma consultoria ágil e de excelência."
+msgstr "Before founding Intelifisco, he worked as a Senior Tax Consulting Manager at a \"Big Four\" audit firm, where he led highly complex projects for executives and large assets. Today, he combines this technical rigor with technology to offer agile and excellent consulting services."
+
+#: .\landing\templates\landing\index.html:313
+msgid "Formação Acadêmica"
+msgstr "Academic Background"
+
+#: .\landing\templates\landing\index.html:316
+msgid "Graduação em Direito, Universidade Candido Mendes"
+msgstr "Bachelor's Degree in Law, Candido Mendes University"
+
+#: .\landing\templates\landing\index.html:319
+msgid "Pós-Graduação em Direito Tributário, FGV DIREITO RIO"
+msgstr "Postgraduate Degree in Tax Law, FGV DIREITO RIO"
+
+#: .\landing\templates\landing\index.html:340
+msgid "Vamos"
+msgstr "Let's"
+
+#: .\landing\templates\landing\index.html:340
+msgid "Conversar"
+msgstr "Talk"
+
+#: .\landing\templates\landing\index.html:342
+msgid "Tem dúvidas sobre sua declaração de Imposto de Renda?"
+msgstr "Do you have questions about your income tax return?"
+
+#: .\landing\templates\landing\index.html:345
+msgid ""
+"Conte conosco para ajudar você a simplificar seus processos fiscais e "
+"garantir total conformidade com a Receita Federal."
+msgstr "Count on us to help you simplify your tax processes and ensure full compliance with the Internal Revenue Service"
+
+#: .\landing\templates\landing\index.html:353
+#: .\landing\templates\landing\index.html:373
+msgid "Email"
+msgstr "Email"
+
+#: .\landing\templates\landing\index.html:360
+#: .\landing\templates\landing\index.html:378
+msgid "Telefone"
+msgstr "Phone"
+
+#: .\landing\templates\landing\index.html:368
+msgid "Nome"
+msgstr "Name"
+
+#: .\landing\templates\landing\index.html:383
+msgid "Mensagem"
+msgstr "Message"
+
+#: .\landing\templates\landing\index.html:388
+msgid "Enviar"
+msgstr "Send"
+
+#: .\landing\templates\landing\index.html:401
+msgid ""
+"Transformando a experiência fiscal através de tecnologia inovadora. "
+"Simplifique sua declaração de IR com soluções inteligentes que garantem "
+"precisão e conformidade com a Receita Federal."
+msgstr "Transforming the tax experience through innovative technology. Simplify your income Tax return with smart solutions that guarantee accuracy and compliance with the Internal Revenue Service."
+
+#: .\landing\templates\landing\index.html:418
+msgid "Menu"
+msgstr "Menu"
+
+#: .\landing\templates\landing\index.html:434
+msgid ""
+"Rua Comendador Torlogo Dauntre, 74 Cambui, Campinas - SP, 13025-270<br /"
+">Sala 1207"
+msgstr "Rua Comendador Torlogo Dauntre, 74 Cambui, Campinas - SP, 13025-270<br />Sala 1207"
+
+#: .\landing\templates\landing\index.html:441
+msgid "Intelifisco Tecnologia e Consultoria Ltda - CNPJ: 59.494.440/0001-95"
+msgstr "Intelifisco Technology and Consulting Ltd - CNPJ: 59.494.440/0001-95"
+
+#: .\landing\templates\landing\index.html:444
+msgid "&copy; 2025 Intelifisco. Todos os direitos reservados."
+msgstr "&copy; 2025 Intelifisco. All rights reserved."
+
+#: .\landing\templates\landing\index.html:452
+msgid "Olá! Gostaria de saber mais"
+msgstr "Hello! I'd like to know more."
+
+#: .\landing\templates\landing\index.html:452
+msgid "WhatsApp"
+msgstr "WhatsApp"
+
+#: .\landing\templates\landing\index.html:489
+msgid "Enviando..."
+msgstr "Sending..."
+
+#: .\landing\templates\landing\index.html:504
+msgid "Mensagem enviada com sucesso! Entraremos em contato em breve."
+msgstr "Message sent successfully! We will contact you soon."
+
+#: .\landing\templates\landing\index.html:507
+msgid "Erro ao enviar formulário:"
+msgstr "Error submitting form:"
+
+#: .\landing\templates\landing\index.html:515
+msgid "Erro ao enviar formulário. Tente novamente."
+msgstr "Error submitting form. Please try again."
+
+#: .\landing\templates\landing\index.html:532
+msgid "Ver mais"
+msgstr "Learn more"
+
+#: .\landing\templates\landing\index.html:533
+msgid "Ver menos"
+msgstr "View less"

@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+{% load static %}
+{% load i18n %}
+
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% trans 'Intelifisco' %}</title>
+    <meta name="description" content="{% trans 'A Intelifisco oferece inteligência tributária para simplificar sua vida financeira. Planejamento, conformidade e economia para o seu bolso.' %}" />
+    <link rel="canonical" href="https://www.intelifisco.com.br">
+    <meta property="og:title" content="Intelifisco">
+    <meta property="og:description" content="A Intelifisco oferece inteligência tributária para simplificar sua vida financeira. Planejamento, conformidade e economia para o seu bolso.">
+    <meta property="og:url" content="https://www.intelifisco.com.br">
+    <meta property="og:site_name" content="Intelifisco">
+    <meta property="og:type" content="website">
+    <script type="application/ld+json">
+      {
+        "@context":"https://schema.org/",
+        "@type":"LocalBusiness",
+        "name":"Intelifisco",
+        "url":"https://www.intelifisco.com.br",
+        "address":
+          {
+            "@type":"PostalAddress",
+            "addressCountry":"BR",
+            "addressLocality":"Campinas",
+            "addressRegion":"SP"
+          }
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context":"https://schema.org/",
+        "@type":"WebSite",
+        "name":"Intelifisco",
+        "url":"https://www.intelifisco.com.br"
+      }
+    </script>
+    
+    <link rel="stylesheet" href="{% static 'landing/css/styles.css' %}" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icons/7.2.3/css/flag-icons.min.css" />
+    <link rel="icon" type="image/x-icon" href="{% static 'landing/images/favicon.ico' %}" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <div class="nav-brand">
+          <a href="#home"><img src="{% static 'landing/images/nav/logo-intelifisco-branco.png' %}" alt="{% trans 'Logo Intelifisco' %}" /></a>
+        </div>
+
+        <nav class="nav-menu" id="nav-menu">
+          <a href="#home" class="nav-link">{% trans 'Início' %}</a>
+          <a href="#nossos-servicos" class="nav-link">{% trans 'Nossos serviços' %}</a>
+          <a href="#sobre-nos" class="nav-link">{% trans 'Sobre nós' %}</a>
+          <a href="#contato" class="nav-link">{% trans 'Contato' %}</a>
+          {% get_current_language as LANGUAGE_CODE %}
+          {% if LANGUAGE_CODE == 'pt-br' %}
+            <a href="/en/" class="nav-link">{% trans 'Inglês' %} <span class="fi fi-us"></span></a>
+          {% else %}
+            <a href="/pt-br/" class="nav-link">{% trans 'Português' %} <span class="fi fi-br"></span></a>
+          {% endif %}
+        </nav>
+
+        <button class="mobile-menu-btn" id="mobile-menu-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-background">
+        <div class="background">
+          <!-- Video -->
+          <video autoplay muted loop id="myVideo">
+            <source src="{% static 'landing/images/hero/video_hero.mp4' %}" type="video/mp4" />
+          </video>
+        </div>
+      </div>
+      <div class="container">
+        <div class="hero-content-1">
+          <h1 class="hero-title">{% trans 'Impostos? Deixa com a gente.' %}</h1>
+          <p class="hero-subtitle">
+            {% trans 'A Intelifisco oferece inteligência tributária para simplificar sua vida financeira. Planejamento, conformidade e economia para o seu bolso.' %}
+          </p>
+          <div class="hero-buttons">
+            <button class="btn btn-primary" type="button" data-scroll="#contato">{% trans 'Começar Agora' %}</button>
+            <button class="btn btn-secondary" type="button" data-scroll="#nossos-servicos">{% trans 'Saiba Mais' %}</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Nossos Serviços -->
+    <section id="nossos-servicos" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>{% trans 'Nossos serviços' %}</h2>
+          <h3>{% trans 'A Gestão Tributária do Seu Patrimônio' %}</h3>
+          <p>
+            {% blocktrans %}<i>Seu tempo é valioso. Suas finanças são complexas. Nossa inteligência tributária garante a tranquilidade e a segurança que você precisa.</i>{% endblocktrans %}
+          </p>
+          <br />
+          <p>
+            {% blocktrans %}Você construiu um patrimônio e sabe que a gestão fiscal é uma parte essencial para protegê-lo e fazê-lo crescer.{% endblocktrans %}
+          </p>
+          <br />
+          <p>
+            {% blocktrans %}Não se preocupe mais com a complexidade tributária. Focamos em um planejamento personalizado, cuidando de suas declarações e buscando a conformidade total e as melhores oportunidades de economia para o seu caso.{% endblocktrans %}
+          </p>
+        </div>
+
+        <div class="services-master-detail">
+          <aside class="services-master" role="tablist" aria-label="{% trans 'Serviços' %}">
+            <button class="service-item active" role="tab" aria-selected="true" aria-controls="service-compliance" id="tab-compliance">
+              <i class="fas fa-scale-balanced"></i>
+              <span>{% trans 'Compliance Tributário no Brasil' %}</span>
+            </button>
+            <button class="service-item" role="tab" aria-selected="false" aria-controls="service-offshore" id="tab-offshore">
+              <i class="fas fa-earth-americas"></i>
+              <span>{% trans 'Investimentos offshore' %}</span>
+            </button>
+            <button class="service-item" role="tab" aria-selected="false" aria-controls="service-contabilidade" id="tab-contabilidade">
+              <i class="fas fa-calculator"></i>
+              <span>{% trans 'Contabilidade' %}</span>
+            </button>
+            <button class="service-item" role="tab" aria-selected="false" aria-controls="service-planejamento" id="tab-planejamento">
+              <i class="fas fa-chess-rook"></i>
+              <span>{% trans 'Planejamento patrimonial' %}</span>
+            </button>
+          </aside>
+
+          <section class="services-detail">
+            <div class="service-panel active" role="tabpanel" id="service-compliance" aria-labelledby="tab-compliance">
+              <header class="service-panel-header">
+                <i class="fas fa-scale-balanced"></i>
+                <h3>{% trans 'Compliance Tributário no Brasil' %}</h3>
+              </header>
+              <ul class="service-features">
+                <li>
+                  {% trans 'Imposto de Renda Pessoa Física' %}
+                </li>
+                <li>
+                  {% trans 'Declaração de Capitais Brasileiros no Exterior' %}
+                </li>
+                <li>
+                  {% trans 'Ganho de Capital e Renda Variável' %}
+                </li>
+                <li>
+                  {% trans 'Carne-leão' %}
+                </li>
+                <li>
+                  {% trans 'ITR' %}
+                </li>
+                <li>
+                  {% trans 'ITCMD e ITBI' %}
+                </li>
+              </ul>
+            </div>
+
+            <div class="service-panel" role="tabpanel" id="service-offshore" aria-labelledby="tab-offshore" hidden>
+              <header class="service-panel-header">
+                <i class="fas fa-earth-americas"></i>
+                <h3>{% trans 'Investimentos offshore' %}</h3>
+              </header>
+              <ul class="service-features">
+                <li>
+                  {% trans 'Contabilidade de empresas offshore' %}
+                </li>
+                <li>
+                  {% trans 'Apuração de imposto sobre investimentos no exterior' %}
+                </li>
+                <li>
+                  {% trans 'Controle de movimentação em investimentos no exterior' %}
+                </li>
+              </ul>
+            </div>
+
+            <div class="service-panel" role="tabpanel" id="service-contabilidade" aria-labelledby="tab-contabilidade" hidden>
+              <header class="service-panel-header">
+                <i class="fas fa-calculator"></i>
+                <h3>{% trans 'Contabilidade' %}</h3>
+              </header>
+              <ul class="service-features">
+                <li>
+                  {% trans 'Contabilidade fiscal e societária' %}
+                </li>
+                <li>
+                  {% trans 'Departamento pessoal' %}
+                </li>
+              </ul>
+            </div>
+
+            <div class="service-panel" role="tabpanel" id="service-planejamento" aria-labelledby="tab-planejamento" hidden>
+              <header class="service-panel-header">
+                <i class="fas fa-chess-rook"></i>
+                <h3>{% trans 'Planejamento patrimonial' %}</h3>
+              </header>
+              <ul class="service-features">
+                <li>
+                  {% trans 'Análise de impacto tributário em operações' %}
+                </li>
+                <li>
+                  {% trans 'Planejamento sucessório' %}
+                </li>
+                {% get_current_language as LANGUAGE_CODE %}
+                {% if LANGUAGE_CODE == 'pt-br' %}
+                  <li>
+                    {% trans 'Análise de estruturas fiscais' %}
+                  </li>
+                {% endif %}
+              </ul>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sobre nós -->
+    <section id="sobre-nos" class="section about-section">
+      <div class="container">
+        <div class="about-content">
+          <div class="about-text">
+            <h2>{% trans 'Sobre a Intelifisco' %}</h2>
+            <p>
+              {% blocktrans %}Na Intelifisco, nos dedicados a simplificar a complexidade do cenário fiscal brasileiro para indivíduos e famílias. Acreditamos que um serviço de alto nível só pode existir com a união de três pilares: <strong>experiência personalizada, rigor técnico e tecnologia.</strong>{% endblocktrans %}
+            </p>
+            <p>
+              {% blocktrans %}Nossa jornada começou com a visão de um profissional com mais de <strong>12 anos</strong> de experiência em consultoria <strong>Big 4</strong>. Com profundo conhecimento em <strong>tributação de pessoas físicas</strong>, identificamos uma lacuna: a necessidade de um parceiro que combinasse a profundidade técnica das grandes consultorias com a eficiência e a acessibilidade da inovação.{% endblocktrans %}
+            </p>
+            <p>
+              {% blocktrans %}É por isso que, na Intelifisco, <strong>qualidade</strong> é inegociável. Nossos esforços são dedicados para que você receba orientações precisas e que suas obrigações sejam cumpridas com total <strong>segurança e conformidade</strong>.<br />{% endblocktrans %}
+            </p>
+          </div>
+          <div class="about-image">
+            <div class="placeholder-image">
+              <img src="{% static 'landing/images/sobre_nos/imagem_sobre_nos.jpg' %}" alt="{% trans 'Imagem sobre a Intelifisco' %}" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Nossa Filosofia -->
+        <div class="about-filosofy-content">
+          <div class="about-filosofy-text">
+            <h2 style="text-align: center;">{% trans 'Nossa' %} <span style="color: #ffd74b;">{% trans 'Filosofia' %}</span></h2>
+
+            <div class="grid">
+              <div class="value-card">
+                <div class="value-icon">
+                  <i class="fas fa-clipboard-check"></i>
+                </div>
+                <h4>{% trans 'Competência e Rigor' %}</h4>
+                <p>
+                  {% blocktrans %}Oferecemos o mais alto nível de <strong>expertise fiscal</strong>, fundamental para a gestão de patrimônios complexos.{% endblocktrans %}
+                </p>
+              </div>
+
+              <div class="value-card">
+                <div class="value-icon">
+                  <i class="fas fa-lock"></i>
+                </div>
+                <h4>{% trans 'Transparência e Confidencialidade' %}</h4>
+                <p>
+                  {% blocktrans %}Total clareza em nossos processos e o compromisso máximo com a <strong>confidencialidade</strong> de suas informações.{% endblocktrans %}
+                </p>
+              </div>
+
+              <div class="value-card">
+                <div class="value-icon">
+                  <i class="fas fa-microchip"></i>
+                </div>
+                <h4>{% trans 'Tecnologia a Serviço' %}</h4>
+                <p>
+                  {% blocktrans %}Unimos nossa <strong>conexão humana</strong> e personalizada com o poder da <strong>tecnologia</strong> para otimizar processos complexos.{% endblocktrans %}
+                </p>
+              </div>
+            </div>
+            <br />
+            <h3 style="text-align: center;">{% trans 'Com a Intelifisco, você garante que sua gestão fiscal seja uma fonte de segurança e otimização, não de preocupação.' %}</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Nossa liderança -->
+    <section id="nossa-lideranca" class="section nossa-lideranca-section">
+      <div class="container">
+        <div class="nossa-lideranca-content">
+          <div class="nossa-lideranca-text">
+            <h2>{% trans 'Nossa liderança' %}</h2>
+            <br />
+
+            <!-- Identidade e resumo -->
+            <h3 style="margin-top:0.5rem;">
+              Diego Filipe Medeiros
+              <span style="display:block; font-size:0.6em; margin-top:0.25rem;">{% trans 'Sócio fundador' %}</span>
+            </h3>
+            <p class="muted" style="margin-bottom:0.75rem;">
+              {% blocktrans %}Diego é advogado e especialista em direito tributário, com mais de 13 anos de experiência dedicados à tributação de pessos físicas.{% endblocktrans %}
+            </p>
+            <p class="muted" style="margin-bottom:0.75rem;">
+              {% blocktrans %}Antes de fundar a Intelifisco, atuou como Gerente Sênior de Consultoria Tributária em uma auditoria "Big Four", onde liderou projetos de alta complexidade para executivos e grandes patrimônios. Hoje, une esse rigor técnico à tecnologia para oferecer uma consultoria ágil e de excelência.{% endblocktrans %}
+            </p>
+
+            <!-- Educação / certificações -->
+            <div style="margin-bottom:1rem;">
+              <h4>{% trans 'Formação Acadêmica' %}</h4>
+              <ul>
+                <li>
+                  {% trans 'Graduação em Direito, Universidade Candido Mendes' %}
+                </li>
+                <li>
+                  {% trans 'Pós-Graduação em Direito Tributário, FGV DIREITO RIO' %}
+                </li>
+              </ul>
+            </div>
+
+            <!-- Email e LinkedIn -->
+            <p class="muted" style="margin-bottom:0.75rem;">
+              <i class="fa-solid fa-at"></i> diego.medeiros@intelifisco.com.br
+            </p>
+            <p class="muted" style="margin-bottom:0.75rem;">
+              <i class="fa-brands fa-linkedin-in"></i> linkedin.com/in/diegomedeiros1
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>{% trans 'Vamos' %} <span style="color: #7BA4FC;">{% trans 'Conversar' %}</span></h2>
+          <p>
+            <strong>{% trans 'Tem dúvidas sobre sua declaração de Imposto de Renda?' %}</strong>
+          </p>
+          <p>
+            {% blocktrans %}Conte conosco para ajudar você a simplificar seus processos fiscais e garantir total conformidade com a Receita Federal.{% endblocktrans %}
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info">
+            <div class="contact-item">
+              <div>
+                <h4>{% trans 'Email' %}</h4>
+                <p>contato@intelifisco.com.br</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div>
+                <h4>{% trans 'Telefone' %}</h4>
+                <p>(21) 99303-9141</p>
+              </div>
+            </div>
+          </div>
+
+          <form class="contact-form">
+            <div class="form-group">
+              <label for="name">{% trans 'Nome' %}</label>
+              {{ form.name }}
+            </div>
+
+            <div class="form-group">
+              <label for="email">{% trans 'Email' %}</label>
+              {{ form.email }}
+            </div>
+
+            <div class="form-group">
+              <label for="telefone">{% trans 'Telefone' %}</label>
+              {{ form.telephone }}
+            </div>
+
+            <div class="form-group">
+              <label for="message">{% trans 'Mensagem' %}</label>
+              {{ form.text }}
+            </div>
+
+            {% csrf_token %}
+            <button type="submit" class="btn btn-primary">{% trans 'Enviar' %}</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <h3><img src="{% static 'landing/images/footer/logo-intelifisco-branco.png' %}" alt="" /></h3>
+            <p>
+              {% blocktrans %}Transformando a experiência fiscal através de tecnologia inovadora. Simplifique sua declaração de IR com soluções inteligentes que garantem precisão e conformidade com a Receita Federal.{% endblocktrans %}
+            </p>
+            <div class="social-links">
+              <a href="https://www.instagram.com/intelifisco/" target="_blank" class="social-link"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/company/intelifisco/about/" target="_blank" class="social-link"><i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+
+          <div class="footer-links">
+            <div class="footer-column">
+              <h4>{% trans 'Menu' %}</h4>
+              <a href="#home">{% trans 'Início' %}</a>
+              <a href="#nossos-servicos">{% trans 'Nossos serviços' %}</a>
+              <a href="#sobre-nos">{% trans 'Sobre a Intelifisco' %}</a>
+              <a href="#contato">{% trans 'Contato' %}</a>
+            </div>
+
+            <div class="footer-column">
+              <h4>{% trans 'Contato' %}</h4>
+              <div class="footer-contact-item">
+                <i class="footer-contact-icon fas fa-envelope"></i><span>contato@intelifisco.com.br</span>
+              </div>
+              <div class="footer-contact-item">
+                <i class="footer-contact-icon fas fa-phone"></i><span>(21) 99303-9141</span>
+              </div>
+              <div class="footer-contact-item">
+                <i class="footer-contact-icon fas fa-map-marker-alt"></i><span>{% blocktrans %}Rua Comendador Torlogo Dauntre, 74 Cambui, Campinas - SP, 13025-270<br />Sala 1207{% endblocktrans %}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            {% trans 'Intelifisco Tecnologia e Consultoria Ltda - CNPJ: 59.494.440/0001-95' %}
+          </p>
+          <p>
+            {% blocktrans %}&copy; 2025 Intelifisco. Todos os direitos reservados.{% endblocktrans %}
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <div class="whatsapp-float">
+      <a href="https://wa.me/551931995077?text={% trans 'Olá! Gostaria de saber mais' %}" target="_blank"><img src="{% static 'landing/images/whatsapp-icon.png' %}" alt="{% trans 'WhatsApp' %}" class="whatsapp-icon" /></a>
+    </div>
+
+    <script src="{% static 'landing/js/script.js' %}"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        // Formatação telefone (XX) XXXXX-XXXX - tolerante a ids diferentes do Django
+        const tel = document.querySelector('#telefone, #id_telephone')
+        if (tel) {
+          tel.addEventListener('input', (e) => {
+            let v = e.target.value.replace(/\D/g, '').slice(0, 11)
+            e.target.value = v.replace(/^(\d{2})(\d{0,5})(\d{0,4})$/, (_, a, b, c) => {
+              return '(' + a + (b ? ') ' + b : '') + (c ? '-' + c : '')
+            })
+          })
+        }
+      
+        // CTA buttons: smooth scroll mantendo buttons
+        document.querySelectorAll('button[data-scroll]').forEach((btn) => {
+          btn.addEventListener(
+            'click',
+            () => {
+              const sel = btn.getAttribute('data-scroll')
+              const target = sel ? document.querySelector(sel) : null
+              if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' })
+            },
+            { passive: true }
+          )
+        })
+      
+        // Envio do formulário via AJAX (protegido)
+        const form = document.querySelector('.contact-form')
+        if (form) {
+          form.addEventListener('submit', function (e) {
+            e.preventDefault()
+            const submitBtn = form.querySelector('button[type="submit"]')
+            const originalText = submitBtn.textContent
+            submitBtn.textContent = '{% trans "Enviando..." %}'
+            submitBtn.disabled = true
+      
+            const formData = new FormData(form)
+            fetch(window.location.pathname, {
+              method: 'POST',
+              body: formData,
+              headers: {
+                'X-Requested-With': 'XMLHttpRequest',
+                'X-CSRFToken': formData.get('csrfmiddlewaretoken')
+              }
+            })
+              .then((r) => r.json())
+              .then((data) => {
+                if (data.success) {
+                  alert('{% trans "Mensagem enviada com sucesso! Entraremos em contato em breve." %}')
+                  form.reset()
+                } else {
+                  let errorMessage = '{% trans "Erro ao enviar formulário:" %}\n'
+                  for (let field in data.errors) {
+                    errorMessage += `${field}: ${data.errors[field].join(', ')}\n`
+                  }
+                  alert(errorMessage)
+                }
+              })
+              .catch(() => {
+                alert('{% trans "Erro ao enviar formulário. Tente novamente." %}')
+              })
+              .finally(() => {
+                submitBtn.textContent = originalText
+                submitBtn.disabled = false
+              })
+          })
+        }
+      })
+    </script>
+    <script>
+      // Master-Detail: Nossos Serviços (tabs acessíveis)
+      const serviceTabs = document.querySelectorAll('.services-master .service-item')
+      const servicePanels = document.querySelectorAll('.services-detail .service-panel')
+      
+      const activateTab = (tabId) => {
+        serviceTabs.forEach((t) => {
+          const active = t.id === tabId
+          t.classList.toggle('active', active)
+          t.setAttribute('aria-selected', active ? 'true' : 'false')
+        })
+        servicePanels.forEach((p) => {
+          const active = p.getAttribute('aria-labelledby') === tabId || p.id === tabId.replace('tab-', 'service-')
+          p.hidden = !active
+          p.classList.toggle('active', active)
+        })
+      }
+      
+      if (serviceTabs.length && servicePanels.length) {
+        serviceTabs.forEach((tab, idx) => {
+          tab.addEventListener('click', () => activateTab(tab.id), { passive: true })
+          tab.addEventListener('keydown', (e) => {
+            if (!['ArrowRight', 'ArrowDown', 'ArrowLeft', 'ArrowUp', 'Home', 'End'].includes(e.key)) return
+            e.preventDefault()
+            const tabsArr = Array.from(serviceTabs)
+            let nextIdx = idx
+            if (e.key === 'ArrowRight' || e.key === 'ArrowDown') nextIdx = (idx + 1) % tabsArr.length
+            if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') nextIdx = (idx - 1 + tabsArr.length) % tabsArr.length
+            if (e.key === 'Home') nextIdx = 0
+            if (e.key === 'End') nextIdx = tabsArr.length - 1
+            const next = tabsArr[nextIdx]
+            next.focus()
+            activateTab(next.id)
+          })
+        })
+      
+        // Estado inicial consistente
+        const currentActive = document.querySelector('.services-master .service-item.active') || serviceTabs[0]
+        activateTab(currentActive.id)
+      }
+    </script>
+  </body>
+</html>
