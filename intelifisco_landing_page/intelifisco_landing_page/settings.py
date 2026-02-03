@@ -147,7 +147,12 @@ STATIC_URL = 'static/'
 # Diretório onde os arquivos estáticos serão coletados em produção
 STATIC_ROOT = BASE_DIR / "staticfiles"
 
-# Configuração para arquivos estáticos em desenvolvimento
+# Configuração do WhiteNoise
+STORAGES = {
+    "staticfiles": {
+        "BACKEND": "whitenoise.storage.CompressedStaticFilesStorage",
+    },
+}
 
 
 # Default primary key field type
